@@ -34,7 +34,7 @@ submitted there. At the pinned commit
   | `ryser_conjecture.variants.six_partite_or_more` | `∀ (r n : ℕ), 6 ≤ r → RyserBound r n` | `r ≥ 6` | `research open` |
 
   The three `formal_proof` links point to lines 77–79, 83–85 and 89–91 of
-  [`../lean/RyserConjectureFC.lean`](../lean/RyserConjectureFC.lean).
+  [`../lean/RyserConjectureFC.lean`](../lean/RyserConjectureFC.lean) at commit `48ef949`.
 
 As in Formal Conjectures, every statement is closed `by sorry`, including the three with a
 `formal_proof` link; the proofs live in [`../lean/`](../lean/) and [`../lean4web/`](../lean4web/).
@@ -65,12 +65,6 @@ expects "The Formal Conjectures Authors" as the owner, while this file names its
   (without the Formal Conjectures attributes) in a single Mathlib-only file and proves the same
   three statements completely, with the row certificates re-encoded so that the kernel checks them in
   minutes (about eight minutes of CPU time in total); the file runs in Lean4Web.
-
-## Before publishing
-
-Replace `COMMIT_SHA` in the three `formal_proof` links by the commit of this repository that the
-links should pin, and check that `#L77-L79`, `#L83-L85` and `#L89-L91` still point at the three
-theorems in `lean/RyserConjectureFC.lean`.
 
 ## Design choices
 

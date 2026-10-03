@@ -74,7 +74,7 @@ theorem ryser_conjecture.variants.three_partite :
 /-- $r = 4$, $\nu(H) = 1$: $\tau(H) \le 3$ [Gy77, Tu79, Tu94]. -/
 @[category research solved, AMS 5,
   formal_proof using lean4 at
-    "https://github.com/KitaKen1/ryser-4partite-nu3/blob/COMMIT_SHA/lean/RyserConjectureFC.lean#L77-L79"]
+    "https://github.com/KitaKen1/ryser-4partite-nu3/blob/48ef9493ec41c4e52d9ddc9ecbb87a51f655cf17/lean/RyserConjectureFC.lean#L77-L79"]
 theorem ryser_conjecture.variants.four_partite_matchingNumber_one :
     RyserBound 4 1 := by
   sorry
@@ -82,7 +82,7 @@ theorem ryser_conjecture.variants.four_partite_matchingNumber_one :
 /-- $r = 4$, $\nu(H) = 2$: $\tau(H) \le 6$ [Wh26]. -/
 @[category research solved, AMS 5,
   formal_proof using lean4 at
-    "https://github.com/KitaKen1/ryser-4partite-nu3/blob/COMMIT_SHA/lean/RyserConjectureFC.lean#L83-L85"]
+    "https://github.com/KitaKen1/ryser-4partite-nu3/blob/48ef9493ec41c4e52d9ddc9ecbb87a51f655cf17/lean/RyserConjectureFC.lean#L83-L85"]
 theorem ryser_conjecture.variants.four_partite_matchingNumber_two :
     RyserBound 4 2 := by
   sorry
@@ -90,7 +90,7 @@ theorem ryser_conjecture.variants.four_partite_matchingNumber_two :
 /-- $r = 4$, $\nu(H) = 3$: $\tau(H) \le 9$. -/
 @[category research solved, AMS 5,
   formal_proof using lean4 at
-    "https://github.com/KitaKen1/ryser-4partite-nu3/blob/COMMIT_SHA/lean/RyserConjectureFC.lean#L89-L91"]
+    "https://github.com/KitaKen1/ryser-4partite-nu3/blob/48ef9493ec41c4e52d9ddc9ecbb87a51f655cf17/lean/RyserConjectureFC.lean#L89-L91"]
 theorem ryser_conjecture.variants.four_partite_matchingNumber_three :
     RyserBound 4 3 := by
   sorry

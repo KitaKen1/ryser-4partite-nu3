@@ -102,7 +102,7 @@ $i\neq j$, call a family of edges $\lbrace i,j\rbrace$-*scattered* if its edges 
 $i$-coordinates and pairwise distinct $j$-coordinates, that is, if it projects to a matching of
 the bipartite graph $\pi_{ij}(H)=\lbrace(e_i,e_j):e\in H\rbrace$.
 
-**Theorem.** If $\nu(H)\le 3$, then $\tau(H)\le 3\,\nu(H)$.
+**Theorem.** If $\nu(H)\le 3$, then $\tau(H)\le 3\nu(H)$.
 
 The case $\nu=0$ is trivial ($H=\emptyset$), and the cases $\nu=1,2,3$ are Lemma 2, Corollary 4
 and Proposition 5 below. Only Proposition 3 needs a computer. The bound cannot be improved for
@@ -325,9 +325,9 @@ Code using Claude Opus 5.5.
 ## Appendix: history and status of small cases
 
 Ryser's conjecture (posed by H. J. Ryser; it first appeared in the 1971 Caltech thesis of his
-student J. R. Henderson) asserts $\tau(H)\le (r-1)\,\nu(H)$ for every $r$-partite $r$-uniform hypergraph
+student J. R. Henderson) asserts $\tau(H)\le (r-1)\nu(H)$ for every $r$-partite $r$-uniform hypergraph
 $H$. Gyárfás observed that it is equivalent to a statement about edge colourings: in every
-$r$-edge-colouring of a graph $G$, the vertices can be covered by at most $(r-1)\,\alpha(G)$
+$r$-edge-colouring of a graph $G$, the vertices can be covered by at most $(r-1)\alpha(G)$
 monochromatic connected subgraphs. The bound $\tau\le r\nu$ is trivial (take all vertices of a
 maximum matching). When $r-1$ is a prime power, disjoint copies of the truncated projective plane
 of order $r-1$ attain $\tau=(r-1)\nu$, so the conjectured bound would be best possible.
@@ -340,9 +340,9 @@ of order $r-1$ attain $\tau=(r-1)\nu$, so the conjectured bound would be best po
 | 1971 | The conjecture appears in Henderson's thesis. |
 | 1977 | Gyárfás: the colouring formulation; the intersecting case $\nu=1$ for small $r$ (credited for $r\le 4$ by White, 2026). |
 | 1979–1994 | Tuza: $(r,\nu)\in\lbrace(3,1),(3,2),(3,3),(3,4),(4,1),(5,1)\rbrace$; the proof for $(5,1)$ is only in an unpublished 1979 manuscript. Tuza also stated $(4,2)$ without a published proof. |
-| 1981 | Füredi: the fractional relaxation $\tau^*\le (r-1)\,\nu$. |
+| 1981 | Füredi: the fractional relaxation $\tau^*\le (r-1)\nu$. |
 | 2001 | Aharoni: $r=3$ for every $\nu$, by topological methods. |
-| 2012 | Haxell and Scott: for $r\in\lbrace4,5\rbrace$ there is $\varepsilon>0$ with $\tau\le (r-\varepsilon)\,\nu$; for $(4,2)$ this gives $\tau\le 7$. |
+| 2012 | Haxell and Scott: for $r\in\lbrace4,5\rbrace$ there is $\varepsilon>0$ with $\tau\le (r-\varepsilon)\nu$; for $(4,2)$ this gives $\tau\le 7$. |
 | 2017 | Francetić, Herke, McKay and Wanless: intersecting *linear* hypergraphs for $r\le 9$. |
 | 2021 | Bishnoi, Das, Morris and Szabó: $t$-intersecting hypergraphs, $\tau\le\lceil (r-t+1)/2\rceil$ for $r/3<t\le r$, which is tight. |
 | 2021 | DeBiasio, Kamel, McCourt and Sheats (survey): apart from $r=2$, the conjecture was verified only for $r=3$ and for $\nu=1$ with $r\in\lbrace4,5\rbrace$. |

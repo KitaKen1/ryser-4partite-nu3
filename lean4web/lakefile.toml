@@ -1,0 +1,11 @@
+name = "ryser_4partite_nu3_lean4web"
+version = "0.1.0"
+defaultTargets = ["RyserLean4Web"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0-rc3"
+
+[[lean_lib]]
+name = "RyserLean4Web"

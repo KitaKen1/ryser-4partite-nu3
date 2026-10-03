@@ -1,0 +1,14 @@
+module
+public import Ryser.StarCases.F0NegativeData
+
+@[expose] public section
+set_option maxRecDepth 16384
+set_option maxHeartbeats 4000000
+namespace Ryser.StarCases.F0Sparse
+open Ryser.FiniteBox
+open Ryser.StarCases.F0
+theorem negative_checked : negativeTriples.all (BulkCNF.checkedTriple selected) = true := by
+  simp only [negativeTriples,List.all_append,negative0_checked,negative1_checked,negative2_checked,negative3_checked,negative4_checked,negative5_checked,negative6_checked,negative7_checked,negative8_checked,negative9_checked,negative10_checked,negative11_checked,negative12_checked,negative13_checked,negative14_checked,negative15_checked,negative16_checked,negative17_checked,negative18_checked,negative19_checked,negative20_checked,negative21_checked,negative22_checked,negative23_checked,negative24_checked,negative25_checked,negative26_checked,negative27_checked,negative28_checked,negative29_checked,negative30_checked,negative31_checked,negative32_checked,negative33_checked,negative34_checked,negative35_checked,negative36_checked,negative37_checked,negative38_checked,negative39_checked,negative40_checked,negative41_checked,negative42_checked,negative43_checked,negative44_checked,negative45_checked,negative46_checked,negative47_checked,negative48_checked,negative49_checked,Bool.and_self]
+#print axioms negative_checked
+
+end Ryser.StarCases.F0Sparse

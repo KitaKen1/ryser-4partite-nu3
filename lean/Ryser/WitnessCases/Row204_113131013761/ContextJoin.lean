@@ -1,0 +1,34 @@
+module
+public import Ryser.WitnessCases.Row204_113131013761.Data
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment0
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment1
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment2
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment3
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment4
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment5
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment6
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment7
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment8
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment9
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment10
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment11
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment12
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment13
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment14
+public import Ryser.WitnessCases.Row204_113131013761.ContextSegment15
+@[expose] public meta section
+set_option maxRecDepth 16384
+set_option maxHeartbeats 4000000
+namespace Ryser.WitnessCases.Row204_113131013761
+def rawFormula : Sat.Fmla := rawGroup0 ++ (rawGroup1 ++ (rawGroup2 ++ (rawGroup3 ++ (rawGroup4 ++ (rawGroup5 ++ (rawGroup6 ++ (rawGroup7 ++ (rawGroup8 ++ (rawGroup9 ++ (rawGroup10 ++ (rawGroup11 ++ (rawGroup12 ++ (rawGroup13 ++ (rawGroup14 ++ (rawGroup15 ++ (rawGroup16 ++ (rawGroup17 ++ (rawGroup18 ++ (rawGroup19 ++ (rawGroup20 ++ (rawGroup21 ++ (rawGroup22 ++ (rawGroup23 ++ (rawGroup24 ++ (rawGroup25 ++ (rawGroup26 ++ (rawGroup27 ++ (rawGroup28 ++ (rawGroup29 ++ (rawGroup30 ++ (rawGroup31 ++ (rawGroup32 ++ (rawGroup33 ++ (rawGroup34 ++ (rawGroup35 ++ (rawGroup36 ++ (rawGroup37 ++ (rawGroup38 ++ (rawGroup39 ++ (rawGroup40 ++ (rawGroup41 ++ (rawGroup42 ++ (rawGroup43 ++ (rawGroup44 ++ (rawGroup45 ++ (rawGroup46 ++ (rawGroup47 ++ (rawGroup48 ++ (rawGroup49 ++ (rawGroup50 ++ (rawGroup51 ++ (rawGroup52 ++ (rawGroup53 ++ (rawGroup54 ++ (rawGroup55 ++ (rawGroup56 ++ (rawGroup57 ++ (rawGroup58 ++ (rawGroup59 ++ (rawGroup60 ++ (rawGroup61 ++ (rawGroup62 ++ (rawGroup63)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+theorem reify_join {n : ℕ} {f g : CNF.Formula n} {rf rg : Sat.Fmla}
+    (hf : LRATBridge.toFormula f = rf) (hg : LRATBridge.toFormula g = rg) :
+    LRATBridge.toFormula (f ++ g) = rf ++ rg := by
+  calc
+    LRATBridge.toFormula (f ++ g) = LRATBridge.toFormula f ++ LRATBridge.toFormula g := List.map_append
+    _ = rf ++ rg := congrArg₂ List.append hf hg
+theorem toFormula_formula : LRATBridge.toFormula formula = rawFormula :=
+  reify_join (group0_reify) (reify_join (group1_reify) (reify_join (group2_reify) (reify_join (group3_reify) (reify_join (group4_reify) (reify_join (group5_reify) (reify_join (group6_reify) (reify_join (group7_reify) (reify_join (group8_reify) (reify_join (group9_reify) (reify_join (group10_reify) (reify_join (group11_reify) (reify_join (group12_reify) (reify_join (group13_reify) (reify_join (group14_reify) (reify_join (group15_reify) (reify_join (group16_reify) (reify_join (group17_reify) (reify_join (group18_reify) (reify_join (group19_reify) (reify_join (group20_reify) (reify_join (group21_reify) (reify_join (group22_reify) (reify_join (group23_reify) (reify_join (group24_reify) (reify_join (group25_reify) (reify_join (group26_reify) (reify_join (group27_reify) (reify_join (group28_reify) (reify_join (group29_reify) (reify_join (group30_reify) (reify_join (group31_reify) (reify_join (group32_reify) (reify_join (group33_reify) (reify_join (group34_reify) (reify_join (group35_reify) (reify_join (group36_reify) (reify_join (group37_reify) (reify_join (group38_reify) (reify_join (group39_reify) (reify_join (group40_reify) (reify_join (group41_reify) (reify_join (group42_reify) (reify_join (group43_reify) (reify_join (group44_reify) (reify_join (group45_reify) (reify_join (group46_reify) (reify_join (group47_reify) (reify_join (group48_reify) (reify_join (group49_reify) (reify_join (group50_reify) (reify_join (group51_reify) (reify_join (group52_reify) (reify_join (group53_reify) (reify_join (group54_reify) (reify_join (group55_reify) (reify_join (group56_reify) (reify_join (group57_reify) (reify_join (group58_reify) (reify_join (group59_reify) (reify_join (group60_reify) (reify_join (group61_reify) (reify_join (group62_reify) (group63_reify)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+#print axioms toFormula_formula
+
+end Ryser.WitnessCases.Row204_113131013761

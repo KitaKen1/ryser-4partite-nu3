@@ -1,0 +1,70 @@
+module
+public import Ryser.SplitFanRegionData
+@[expose] public section
+set_option maxRecDepth 8192
+set_option maxHeartbeats 2000000
+namespace Ryser.SplitFanRegions
+open FiniteBox
+theorem positive8_a0 : ∀ (b : Fin 8) (c d : Fin 4),
+    hits cover8 ((0,b,c,d) : RegionCode) = false →
+    pairCondition pairs ((0,b,c,d) : RegionCode) = true →
+    regions8.any (fun r => regionTest r (coord ((0,b,c,d) : RegionCode))) = true := by
+  intro b
+  fin_cases b <;> intro c <;> fin_cases c <;> decide
+theorem positive8_a1 : ∀ (b : Fin 8) (c d : Fin 4),
+    hits cover8 ((1,b,c,d) : RegionCode) = false →
+    pairCondition pairs ((1,b,c,d) : RegionCode) = true →
+    regions8.any (fun r => regionTest r (coord ((1,b,c,d) : RegionCode))) = true := by
+  intro b
+  fin_cases b <;> intro c <;> fin_cases c <;> decide
+theorem positive8_a2 : ∀ (b : Fin 8) (c d : Fin 4),
+    hits cover8 ((2,b,c,d) : RegionCode) = false →
+    pairCondition pairs ((2,b,c,d) : RegionCode) = true →
+    regions8.any (fun r => regionTest r (coord ((2,b,c,d) : RegionCode))) = true := by
+  intro b
+  fin_cases b <;> intro c <;> fin_cases c <;> decide
+theorem positive8_a3 : ∀ (b : Fin 8) (c d : Fin 4),
+    hits cover8 ((3,b,c,d) : RegionCode) = false →
+    pairCondition pairs ((3,b,c,d) : RegionCode) = true →
+    regions8.any (fun r => regionTest r (coord ((3,b,c,d) : RegionCode))) = true := by
+  intro b
+  fin_cases b <;> intro c <;> fin_cases c <;> decide
+theorem positive8_a4 : ∀ (b : Fin 8) (c d : Fin 4),
+    hits cover8 ((4,b,c,d) : RegionCode) = false →
+    pairCondition pairs ((4,b,c,d) : RegionCode) = true →
+    regions8.any (fun r => regionTest r (coord ((4,b,c,d) : RegionCode))) = true := by
+  intro b
+  fin_cases b <;> intro c <;> fin_cases c <;> decide
+theorem positive8_a5 : ∀ (b : Fin 8) (c d : Fin 4),
+    hits cover8 ((5,b,c,d) : RegionCode) = false →
+    pairCondition pairs ((5,b,c,d) : RegionCode) = true →
+    regions8.any (fun r => regionTest r (coord ((5,b,c,d) : RegionCode))) = true := by
+  intro b
+  fin_cases b <;> intro c <;> fin_cases c <;> decide
+theorem positive8_a6 : ∀ (b : Fin 8) (c d : Fin 4),
+    hits cover8 ((6,b,c,d) : RegionCode) = false →
+    pairCondition pairs ((6,b,c,d) : RegionCode) = true →
+    regions8.any (fun r => regionTest r (coord ((6,b,c,d) : RegionCode))) = true := by
+  intro b
+  fin_cases b <;> intro c <;> fin_cases c <;> decide
+theorem positive8_a7 : ∀ (b : Fin 8) (c d : Fin 4),
+    hits cover8 ((7,b,c,d) : RegionCode) = false →
+    pairCondition pairs ((7,b,c,d) : RegionCode) = true →
+    regions8.any (fun r => regionTest r (coord ((7,b,c,d) : RegionCode))) = true := by
+  intro b
+  fin_cases b <;> intro c <;> fin_cases c <;> decide
+theorem positive8_geometry : ∀ c : RegionCode,
+    hits cover8 c = false → pairCondition pairs c = true →
+    regions8.any (fun r => regionTest r (coord c)) = true := by
+  intro ⟨a,b,c,d⟩
+  fin_cases a
+  · exact positive8_a0 b c d
+  · exact positive8_a1 b c d
+  · exact positive8_a2 b c d
+  · exact positive8_a3 b c d
+  · exact positive8_a4 b c d
+  · exact positive8_a5 b c d
+  · exact positive8_a6 b c d
+  · exact positive8_a7 b c d
+#print axioms positive8_geometry
+end Ryser.SplitFanRegions
